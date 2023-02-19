@@ -78,3 +78,13 @@
     font-weight: bold;
     font-size:xx-large;
   }  
+
+  .the-challenges {
+    background-image: url('https://bagor.tech/wp-content/uploads/2023/02/the-challenge-hero-imgd.png');
+    background-size:cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
