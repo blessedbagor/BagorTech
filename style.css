@@ -88,3 +88,13 @@
     padding-top: 50px;
     padding-bottom: 80px;
   }
+
+  .our-solutions {
+    background-image: url('https://bagor.tech/wp-content/uploads/2023/02/our-solution.png');
+    background-size:cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
