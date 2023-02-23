@@ -87,3 +87,13 @@
     padding-top: 50px;
     padding-bottom: 80px;
   }
+
+  .get-involved {
+    background-image: url('https://bagor.tech/wp-content/uploads/2023/02/get-involved-hero-img.png');
+    background-size:cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
