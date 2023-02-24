@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="shortcut icon" href="https://bagor.tech/wp-content/uploads/2023/02/favicon-img.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <title>Contact > Bagor Tech</title>
 </head>
 <body>
@@ -75,15 +77,38 @@
     </div>
   </nav>
   <!--Navigation Menu Ending-->
-  <!--Final Call to Action Start-->
-<div class="jumbotron">
-    <div class="container-fluid">
-      <h2 class="display-2">Take action today and be a part of the solution!</h2>
-      <h5 class="display-6"> Together, we can break the cycle of poverty and build thriving communities. Whether you're a farmer, an advocate, or simply someone who cares about the environment and social justice, you can make a difference.</h5>
-      <button type="button" class="btn btn-lg" id="cta">Take Action</button>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12" id="UniqueProposition">
+        <h2 class="display-4" id="donate">Contact Us</h2>
+        <p class="lead mb-3">Please fill up the form below.</p>
+        <form id="contact-form" method="post" action="contact.php" novalidate>
+          <div class="form-group">
+              <label for="name" class="lead">Name*</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="form-group">
+              <label for="email" class="lead">Email address*</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+              <label for="message" class="lead">Message*</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-lg">Submit</button>
+      </form>
+      
+        
+      
+      </div>
+      <div class="col-md-6 col-sm-12" id="UniquePropositionImg">
+        <iframe class="m-5 pt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3985980452103!2d122.50909871377665!3d8.06076150562211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3253c9cd4f89bec1%3A0xdc088849534d6d!2sBagorganic%20Way!5e0!3m2!1sen!2sph!4v1677218992195!5m2!1sen!2sph" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
-  <!--Final Call to Action End-->
   
   <!--Footer Start-->
   <footer class="footer">
