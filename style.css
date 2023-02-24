@@ -97,3 +97,13 @@
     padding-top: 50px;
     padding-bottom: 80px;
   }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer img {
+    align-items: center;
+  }
+  
