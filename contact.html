@@ -14,6 +14,8 @@
     <title>Contact > Bagor Tech</title>
 </head>
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=2489279637879535&autoLogAppEvents=1" nonce="L9gnHv5B"></script>
   <!--Navigation Menu Start-->
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container-fluid">
@@ -82,30 +84,34 @@
       <div class="col-md-6 col-sm-12" id="UniqueProposition">
         <h2 class="display-4" id="donate">Contact Us</h2>
         <p class="lead mb-3">Please fill up the form below.</p>
-        <form id="contact-form" method="post" action="contact.php" novalidate>
+        <form id="contact-form" action="https://formspree.io/f/myyawvrr" method="POST">
           <div class="form-group">
-              <label for="name" class="lead">Name*</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-              <div class="invalid-feedback">Please enter your name.</div>
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="invalid-feedback">
+              Please enter your name.
+            </div>
           </div>
           <div class="form-group">
-              <label for="email" class="lead">Email address*</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-              <div class="invalid-feedback">Please enter a valid email address.</div>
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
           </div>
           <div class="form-group">
-              <label for="message" class="lead">Message*</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-              <div class="invalid-feedback">Please enter your message.</div>
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            <div class="invalid-feedback">
+              Please enter a message.
+            </div>
           </div>
-          <button type="submit" class="btn btn-lg">Submit</button>
-      </form>
-      
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
         
-      
       </div>
       <div class="col-md-6 col-sm-12" id="UniquePropositionImg">
-        <iframe class="m-md-5 pt-md-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.3985980452103!2d122.50909871377665!3d8.06076150562211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3253c9cd4f89bec1%3A0xdc088849534d6d!2sBagorganic%20Way!5e0!3m2!1sen!2sph!4v1677218992195!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="fb-page m-5 pt-5" data-href="https://www.facebook.com/bagor.tech" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bagor.tech" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bagor.tech">Bagor.Tech</a></blockquote></div>
       </div>
     </div>
   </div>
@@ -120,6 +126,42 @@
     </footer>
     
   <!--Footer End-->
-  
+  <script>
+function validateForm() {
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+  let isValid = true;
+
+  if (nameInput.value.trim() === "") {
+    nameInput.classList.add("is-invalid");
+    isValid = false;
+  } else {
+    nameInput.classList.remove("is-invalid");
+  }
+
+  if (emailInput.value.trim() === "" || !isValidEmail(emailInput.value)) {
+    emailInput.classList.add("is-invalid");
+    isValid = false;
+  } else {
+    emailInput.classList.remove("is-invalid");
+  }
+
+  if (messageInput.value.trim() === "") {
+    messageInput.classList.add("is-invalid");
+    isValid = false;
+  } else {
+    messageInput.classList.remove("is-invalid");
+  }
+
+  return isValid;
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+  </script>
   </body>
   </html>
