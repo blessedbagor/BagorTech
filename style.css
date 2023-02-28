@@ -102,6 +102,22 @@
     padding-bottom: 80px;
   }
 
+  #map {
+    margin: 0 auto;
+    border: 10px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  @media (max-width: 767px) {
+    #map {
+      max-width: none;
+      border-width: 5px;
+    }
+  }
+  
+
   footer a {
     text-decoration: none;
     color: black;
