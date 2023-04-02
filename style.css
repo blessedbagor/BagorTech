@@ -53,7 +53,7 @@
   }
   
   .jumbotron {
-    background-image: url('https://bagor.tech/wp-content/uploads/2023/02/take-action-for-the-farmers.png');
+    background-image: url('img/take-action-for-the-farmers.png');
     background-size: cover;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
@@ -63,7 +63,7 @@
   }
 
   .about-us {
-    background-image: url('https://bagor.tech/wp-content/uploads/2023/02/about-us-header-img.png');
+    background-image: url('img/about-us-header-img.png');
     background-size:cover;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
@@ -73,7 +73,7 @@
   }
 
   .the-challenges {
-    background-image: url('https://bagor.tech/wp-content/uploads/2023/03/accept-the-challenge-1.png');
+    background-image: url('img/accept-the-challenge-1.png');
     background-size:cover;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
@@ -83,7 +83,7 @@
   }
 
   .our-solutions {
-    background-image: url('https://bagor.tech/wp-content/uploads/2023/03/the-solution-1.png');
+    background-image: url('img/the-solution-1.png');
     background-size:cover;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
@@ -93,7 +93,7 @@
   }
 
   .get-involved {
-    background-image: url('https://bagor.tech/wp-content/uploads/2023/03/help-farmer.png');
+    background-image: url('img/help-farmer.png');
     background-size:cover;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
